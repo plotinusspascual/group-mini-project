@@ -18,14 +18,16 @@
     <main>
 
         <section class = "card">
-            <header>Flexbox Row</header>
+            <header>
+                <h2>Flexbox Row</h2>
+            </header>
             <div>
                 <p>Use these three properties to create a flexbox row.</p>
                 <code>
                     .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
+                        display: flex; <br>
+                        flex-direction: row; <br>
+                        flex-wrap: wrap; <br>
                     }
                 </code>
             </div>
@@ -42,9 +44,9 @@
                     Use this to create a flexbox column layout.
                 </p>
                 <code>
-                    .column {
-                        display: flex;
-                        flex-direction: column;
+                    .column { <br>
+                        display: flex; <br>
+                        flex-direction: column; <br>
                     }
                 </code>
             </div>
@@ -61,7 +63,12 @@
                     Build a 12-column layout using CSS grid.
                 </p>
                 <code>
-
+                    .grid { <br>
+                        display:grid;<br>
+                        width:100%; <br>
+                        grid-template-columnns:  <br>
+                            repeat (12, 1fr);<br>
+                    }
                 </code>
             </div>
         </section>
@@ -77,6 +84,13 @@
                     This will create a background linear gradient from top to bottom. 
                 </p>
                 <code>
+                    .linear-gradient-background { <br>
+                        background-image: linear- <br>
+                        gradient ( <br>
+                            rgba(232, 102, 236, 0.3) 0%, <br>
+                            rgba(232, 102, 236, 0.6) 100% <br>
+                        );
+                    }
 
                 </code>
             </div>
@@ -93,6 +107,16 @@
                     Use transition and box shadows to glow on hover. 
                 </p>
                 <code>
+                    .code-card .card-header{ <br>
+                        border-radius:8px; <br>
+                        transition: all 0.5s ease-in-out; <br>
+                    }
+                    .code-card:hover, 
+                    .code-card:hover .card-header{ <br>
+                        box-shadow: inset 0px 0px 8px <br>
+                        rgba(232, 102, 236, 1), 0 0 15px <br>
+                        rgba(232, 102, 236, 1); <br>
+                    }
 
                 </code>
             </div>
@@ -109,6 +133,10 @@
                     Use position properties and negative margins to raise elements higher than thier natural starting point. 
                 </p>
                 <code>
+                    .card-header{ <br>
+                        position:relative;<br>
+                        margin-top:-20px;
+                    }
 
                 </code>
             </div>

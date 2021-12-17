@@ -14,20 +14,55 @@ header{
 .card header{
     justify-content: center;
     text-align: center;
+    position:relative;
+    margin-top: -50px;
+    background-color: var(--pirate-blue);
+    border: 5px solid var(--pirate-tan);
+
 }
 
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
     border: 5px solid var(--pirate-tan);
     padding: 10px;
     margin: 20px;
-    max-width: 27%;
+    max-width: 300px;
 }
 
 footer{
     text-align: center;
 }
+
+/*mobile
+@media (max-width:768px){
+    main {
+        display:grid;
+        width:100%;
+        grid-template-columnns: repeat (1, auto); 
+    }
+}
+
+
+@media (max-width:992px){
+
+    main {
+        display:grid;
+        width:100%;
+        grid-template-columnns: repeat (2, auto); 
+    }
+}
+
+
+@media (min-width: 993px) {
+    main {
+        display:grid;
+        width:100%;
+        grid-template-columnns: repeat (30% 30% 30%); 
+    }
+}
+*/
