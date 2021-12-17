@@ -8,6 +8,9 @@
     --pirate-orange: rgb(214, 150, 54);
     --pirate-text: black;
 }
+body{
+    background-color: var(--pirate-tan);
+}
 header{
     text-align: center;
 }
@@ -32,7 +35,12 @@ main{
     padding: 10px;
     margin: 20px;
     width:30%;
+    background-image: linear-gradient(
+        rgb(100, 130, 189) 0%,
+        rgb(214, 150, 54) 100%
+    );
 }
+
 
 footer{
     text-align: center;
