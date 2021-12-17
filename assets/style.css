@@ -31,7 +31,7 @@ main{
     border: 5px solid var(--pirate-tan);
     padding: 10px;
     margin: 20px;
-    max-width: 300px;
+    width:30%;
 }
 
 footer{
@@ -59,10 +59,8 @@ footer{
 
 
 @media (min-width: 993px) {
-    main {
-        display:grid;
-        width:100%;
-        grid-template-columnns: repeat (30% 30% 30%); 
-    }
+   .card {
+       width:30%;
 }
+
 */
