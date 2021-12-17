@@ -1,10 +1,16 @@
+:root{
+    --pirate-blue: rgb(100, 130, 189); 
+    --pirate-tan: #d1cba7;
+    --pirate-orange: rgb(214, 150, 54);
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
 }
 
 .card{
-    border: 5px solid gray;
+    border: 5px solid var(--pirate-tan);
     padding: 10px;
     margin: 20px;
 }
