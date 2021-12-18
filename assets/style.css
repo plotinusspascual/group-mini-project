@@ -14,14 +14,21 @@ body{
 header{
     text-align: center;
 }
-.card header{
+.card .header-title{
     justify-content: center;
     text-align: center;
     position:relative;
     margin-top: -50px;
     background-color: var(--pirate-blue);
     border: 5px solid var(--pirate-tan);
+    transition: all 0.5s ease-in-out;
+}
 
+.card:hover,
+.card .header-title:hover {
+    box-shadow: inset 0px 0px 8px
+    rgb(214, 150, 54), 0 0 15px
+    rgb(100, 130, 189);
 }
 
 main{
