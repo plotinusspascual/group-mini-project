@@ -26,15 +26,24 @@ header{
 
 main{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+}
+
 .card{
+    display: flex;
+    flex-direction: column;
     border: 5px solid var(--pirate-tan);
     padding: 10px;
     margin: 20px;
-    width:30%;
+    width: 30%;
     background-image: linear-gradient(
         rgb(100, 130, 189) 0%,
         rgb(214, 150, 54) 100%
@@ -46,12 +55,25 @@ footer{
     text-align: center;
 }
 
-/*mobile
+
+
+@media (max-width:768px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width:992px){
+    .card{
+        width: 50%;
+    }
+}
+
+/*
 @media (max-width:768px){
     main {
         display:grid;
         width:100%;
-        grid-template-columnns: repeat (1, auto); 
     }
 }
 
