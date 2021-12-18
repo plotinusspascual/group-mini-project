@@ -11,9 +11,22 @@
 body{
     background-color: var(--pirate-tan);
 }
+
 header{
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
+
+h1{
+    color: var(--pirate-blue)
+}
+
+h2{
+    color: var(--pirate-tan)
+}
+
 .card .header-title{
     justify-content: center;
     text-align: center;
